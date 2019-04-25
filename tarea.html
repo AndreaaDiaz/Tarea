@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <title>TAREA!!</title>
+    <link rel="stylesheet" type="text/css" href="CSS/tarea.css"> 
+      <script type="text/javascript">
+        function ver(n){
+          document.getElementById("subseccion"+n).style.display="block"
+        }
+        function ocultar(n){
+          document.getElementById("subseccion"+n).style.display="none"
+        }
+      </script>
+  </head>
+<body>
+     <div id="cabecera">
+       <h1>Tarea Menú</h1></div>
+      <div id="navegador">
+            <ul>                  
+            <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+              <a href="#">Sección 1</a> 
+              <div id="subseccion1" style="display: none;">
+                  <p><a href="#"> Opción uno</a></p>
+                  <p><a href="#"> Opción dos</a></p>
+                  <p><a href="#"> Opción tres</a></p>
+                </disv>
+                </li>
+            <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
+                    <a href="#">Sección 2</a> 
+                    <div id="subseccion2" style="display: none;">
+                        <p><a href="#"> Opción uno</a></p>
+                        <p><a href="#"> Opción dos</a></p>
+                        <p><a href="#"> Opción tres</a></p>
+                    </div>
+                    </li>
+             <li id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)">
+                    <a href="#">Sección 3</a> 
+                    <div id="subseccion3" style="display: none;">
+                        <p><a href="#"> Opción uno</a></p>
+                        <p><a href="#"> Opción dos</a></p>
+                        <p><a href="#"> Opción tres</a></p>
+                    </div>
+                    </li>
+              </ul>
+            <div class="borrar"></div>
+       </div>
+       <div id="principal">
+         <p><i>Ingrese los datos correspondientes</i></p>
+         <SCRIPT  language=JavaScript> 
+            function go(){
+            if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
+              alert("✨✨ INGRESASTE CORRECTAMENTE ✨✨");
+             
+                } 
+                else{ 
+                     alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+                } 
+            } 
+            </SCRIPT> 
+            <FORM name=form action="TU_PAGINA_WEB.HTML">
+            
+            <P>Usuario:    <INPUT type=text name=login> 
+            <P>Contraseña: <INPUT type=password name=password> 
+            <INPUT onclick=go() type=button value=Acceder>
+            
+            </FORM> 
+       </div>
+</body>
+</html>
